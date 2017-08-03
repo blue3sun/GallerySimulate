@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_view_pager_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="#ffffff"
+    tools:context="com.android.lanjing.gallerysimulate.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模拟Gallery"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tv_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@id/tv_title"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:clipChildren="false"
+        android:background="#ffffff">
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>
